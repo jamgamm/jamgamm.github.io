@@ -1,0 +1,51 @@
+
+.blog__section{
+    background-color: #141414;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    background-color: #141414;
+}
+
+.posts {
+    border: 1px solid #141414;
+    border-radius: .25rem;
+}
+
+.post__img--container{
+    background-size: cover;
+    min-height: 180px;
+    background-position: center;
+    background-color: #fff;
+}
+
+#post__img{
+    height: 100%;
+    width: 100%;
+}
+
+.post__content{
+    padding: 15px;
+    background-color: #fff;
+}
+
+button{
+    background: #f77062;
+    color: #fff;
+    border: 1px solid;
+    padding: .5rem 1.1rem;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+
+button:hover {
+    background: #483fff;
+    transition: all 0.35s ease;
+}
+
+.grid-container .posts:first-child{
+    grid-row: span 2;
+}

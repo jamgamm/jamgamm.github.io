@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Gammuac Website</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <script src="https://kit.fontawesome.com/3b37118190.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Jam Gammuac</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <!--redirect to about me page-->
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">
+                        About Me
+                    </a>
+                </li>
+                <!--redirect to blog page-->
+                <li class="navbar__item">
+                    <a href="/blog.html" class="navbar__links">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section-->
+    <div class="about__section">
+        <div class="about__container">
+            <div class="about__img--container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/20211203_Jam_Gammuac_Line_Cook_RP_0013.jpg" id="about__img">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/20211203_Jam_Gammuac_Line_Cook_RP_0003.jpg" id="about__img">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="about__content">
+                <h1>About Me</h1>
+                <p>I am currently a software engineering student at the University of Calgary.
+                    I have a passion for programming and am particularly interested in data science and web development.
+                    Some of my other hobbies include basketball, playing video games, and cooking. 
+                    I built this site
+                    as a personal project and although it still needs some work, I have learned a lot by 
+                    working on it!
+                </p>
+            </div>
+            <div class="about__content">
+                <h1>Acknowledgement</h1>
+                <p>A special thanks to my friends Reuben and Rica for helping me out with making this site!
+                    Reuben is a photo journalist and took many of the pictures of me that you see here.
+                    <br>Check out his
+                    <a href="https://instagram.com/reubenpolintan?igshid=YmMyMTA2M2Y=" target="_blank">instagram</a>
+                    and his
+                    <a href="https://drive.google.com/drive/folders/1e-MHZbihdBnwRx_L0v2JmfBBNilfHH14?usp=sharing" target="_blank">portfolio.</a>
+                    <br> Rica studies information design and helped me out with making this site look great.
+                    Take a look at her <a href="https://www.youtube.com/watch?v=q6EoRBvdVPQ" target="_blank">portfolio.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container">
+        <div class="footer__content">
+            <h2>Socials</h2>
+        </div>
+        <div class="footer__content">
+            <a href="https://github.com/jamgamm"><i class="fa-brands fa-github"></i></a>
+            <a href="/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:jamivy.gammuac@ucalgary.ca"><i class="fa-solid fa-envelope"></i></a>
+        
+        </div>
+    </div>
+
+
+
+    <script src="JS/app.js"></script>
+    <script src="JS/swiper.js"></script>
+</body>
+</html>

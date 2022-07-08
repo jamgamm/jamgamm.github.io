@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Gammuac Website</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/posts.css">
+    <script src="https://kit.fontawesome.com/3b37118190.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Jam Gammuac</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <!--redirect to about me page-->
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">
+                        About Me
+                    </a>
+                </li>
+                <!--redirect to blog page-->
+                <li class="navbar__item">
+                    <a href="/blog.html" class="navbar__links">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Post Section-->
+    <div class="full-container">
+        <div class="post-container">
+            <div class="card">
+                <h2>Going out for Coffee</h2>
+                <h5>April 29, 2022</h5>
+                <!-- image is in 1 level above working directory -->
+                <div class="post__img-container">
+                    <img src="../images/jam-at-and-some.jpg" id="post__img_vert">
+                </div>
+
+                <p><br>I went out with a couple of friends to check out And Some Cafe. It's a little coffee shop
+                    located in Kengsington. They offer a variety of coffees, lemonades, and snacks like muffins and cakes. I got
+                    the strawberry latte and it was very good.
+                    <br><br>There's also a small flower shop at the front of the cafe which is really cute! My friends and I picked
+                    out some flowers for our own bouquets. But if you're unsure of what flowers to choose, you can also ask the florist
+                    to make a bouquet based on a colour theme, which I think is a nice option. 
+                    <br><br>Overall it was a fun time! I definitely recommend this place for a nice spot to chill out. </p>
+            </div>
+        </div>
+        <div class="more-posts">
+            <div class="card">
+                <h2>More Posts</h2>
+                <div class="more-images">
+                    <img src="../images/glacier-national-park.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post2.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+                <div class="more-images">
+                    <img src="../images/arduino-buttons.jpg" id="more__img">
+                    <h4><a href="../BlogPosts/post3.html" class="read-more">Read</a></h4>
+                </div>
+                <div class="more-images">
+                    <img src="../images/stack-reviver-filler.jpg" id="more__img">
+                    <h4><a href="/" class="read-more">Read</a></h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__container">
+        <div class="footer__content">
+            <h2>Socials</h2>
+        </div>
+        <div class="footer__content">
+            <a href="https://github.com/jamgamm"><i class="fa-brands fa-github"></i></a>
+            <a href="/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:jamivy.gammuac@ucalgary.ca"><i class="fa-solid fa-envelope"></i></a>
+        
+        </div>
+    </div>
+
+    <script src="../JS/app.js"></script>
+
+</body>
+</html>
