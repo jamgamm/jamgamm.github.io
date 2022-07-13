@@ -16,7 +16,6 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 1 rem = 16 pixels*/
     font-size: 1.2rem;
     position: sticky;
     top: 0;
