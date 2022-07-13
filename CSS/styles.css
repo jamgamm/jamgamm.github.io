@@ -30,15 +30,10 @@ html, body{
     height: 80px;
     z-index: 1;
     width: 100%;
-    /* make sure width doesn't go over 1300 pixels */
-    /* max-width: 1300px; */
-    /* margin set up: top/bottom is 0, left/right is auto */
     margin: 0 auto;
-    /* padding set up: top/bottom is 0, left/right is 50 pixels */
     padding: 0 15px;
 }
 
-/*use a # because nav_logo was an ID */
 #navbar__logo {
     background-color: #ff8177;
     background-image: linear-gradient(to top, #e65c4f 0%, #e9eef2 100%);
@@ -190,7 +185,7 @@ html, body{
     }
 }
 
-/* Hero Section CSS */
+/* Main Section CSS */
 .main{
     background-color: #141414;    
 }
