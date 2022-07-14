@@ -5,17 +5,14 @@
 
 .about__container {
     display: grid;
-    grid-template-columns: 40% 60%; /* 40/60 split for picture and text */
-    grid-template-rows: 1fr 1fr; /*50/50 even split for rows*/
-    grid-gap: 20px;
+    grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: auto;
     background-color: #141414;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     padding: 0 25px;
 }
 
@@ -46,14 +43,13 @@
 }
 
 .about__img--container {
-    height: 100%;
-    width: 100%;
+    width: 50%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin: auto;
-    grid-row: 1/-1; /*image spans all the rows for the column its in */
     text-align: center;
 }
 
@@ -105,7 +101,8 @@
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
-    top: 25%;
+    bottom: 0%;
+    right: 0%;
 }
   
   
@@ -166,3 +163,4 @@
     }
 
 }
+
