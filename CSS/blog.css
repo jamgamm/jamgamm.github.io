@@ -1,16 +1,16 @@
-
 .blog__section{
     background-color: #141414;
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #141414;
 }
 
 .posts {
+    height: 25%;
+    width: 25%;
     border: 1px solid #141414;
     border-radius: .25rem;
 }
@@ -46,6 +46,32 @@ button:hover {
     transition: all 0.35s ease;
 }
 
-.grid-container .posts:first-child{
-    grid-row: span 2;
+/* Mobile Responsive */
+@media screen and (max-width: 900px){
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .posts {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #141414;
+        border-radius: .25rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .posts {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #141414;
+        border-radius: .25rem;
+    }
 }
