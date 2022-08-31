@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Gammuac Website</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/posts.css">
+    <script src="https://kit.fontawesome.com/3b37118190.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Jam Gammuac</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <!--redirect to about me page-->
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">
+                        About Me
+                    </a>
+                </li>
+                <!--redirect to blog page-->
+                <li class="navbar__item">
+                    <a href="/blog.html" class="navbar__links">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Post Section-->
+    <div class="full-container">
+        <div class="post-container">
+            <div class="card">
+                <h2>Trip to Vancouver</h2>
+                <h5>Aug 28, 2022</h5>
+                <!-- image is in 1 level above working directory -->
+                <div class="post__img-container">
+                    <img src="../images/hot-pot.jpg" id="post__img_hori">
+                </div>
+
+                <p><br>I recently went on a trip to Vancouver this summer with my friends. It was a lot of fun!<br><br>
+                    We explored downtown Vancouver and also went around Burnaby and Richmond. Personally, I like Richmond the most,
+                    mainly because there's so much great food to eat there! Something I like to do when I visit in the summer
+                    is go to the night market and buy a bunch of different things to eat. A few of my favourite things to
+                    get there are grilled squid, meat skewers, and dango.<br><br>
+                    We also went to a hotpot place in Richmond for dinner one night. It was my friend's first time
+                    having hotpot and I'm glad they enjoyed it. The broths we got were curry and tomato, and we got a variety
+                    of meats including beef, lamb, and tripe. The picture is actually our first round, we ordered more meat
+                    after it!<br><br>
+                    I had a great time and am looking forward to the next time I can go back!
+            </div>
+        </div>
+        <div class="more-posts">
+            <div class="card">
+                <h2>More Posts</h2>
+                <div class="more-images">
+                    <img src="../images/glacier-national-park.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post2.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+                <div class="more-images">
+                    <img src="../images/arduino-buttons.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post3.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+                <div class="more-images">
+                    <img src="../images/arduino-IR.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post4.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container">
+        <div class="footer__content">
+            <h2>Socials</h2>
+        </div>
+        <div class="footer__content">
+            <a href="https://github.com/jamgamm"><i class="fa-brands fa-github"></i></a>
+            <a href="/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:jamivy.gammuac@ucalgary.ca"><i class="fa-solid fa-envelope"></i></a>
+        
+        </div>
+    </div>
+
+    <script src="../JS/app.js"></script>
+
+</body>
+</html>
