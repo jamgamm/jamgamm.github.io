@@ -144,6 +144,12 @@
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+    
+    .about__img--container{
+        width: auto;
+        height: auto;
+        display: grid;
+    }
 }
 
 @media screen and (max-width: 480px) {
