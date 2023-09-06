@@ -283,12 +283,12 @@ html, body{
     padding: 10px 15px;
 }
 
-.fa-brands, .fa-solid{
+.fa-brands, .fa-solid, .fa{
     color: #e9eef2;
     font-size: 1.5rem;
 }
 
-.fa-brands:hover, .fa-solid:hover{
+.fa-brands:hover, .fa-solid:hover, .fa:hover{
     transform: scale(1.25);
     transition: 0.2s ease-in;
     cursor: pointer;
