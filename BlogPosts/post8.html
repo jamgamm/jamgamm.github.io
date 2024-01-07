@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Gammuac Website</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/posts.css">
+    <link rel="stylesheet" href="../CSS/sliderVer2.css">
+    <script src="https://kit.fontawesome.com/3b37118190.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Jam Gammuac</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index.html" class="navbar__links">
+                        Home
+                    </a>
+                </li>
+                <!--redirect to about me page-->
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">
+                        About Me
+                    </a>
+                </li>
+                <!--redirect to blog page-->
+                <li class="navbar__item">
+                    <a href="/blog.html" class="navbar__links">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Post Section-->
+    <div class="full-container">
+        <div class="post-container">
+            <div class="card">
+                <h2>A Small PD101JP Analysis</h2>
+                <h5>Dec 20, 2023</h5>
+                <!-- image is in 1 level above working directory -->
+                <div class="post__img-container">
+                    <img src="../images/me_i.jpeg" id="post__img_hori" style="width:75%">
+                </div>
+
+                <p><br> Recently a show I was following called Produce 101 Japan (Season 3, The Girls) finished up and I thought I'd do a
+                    small analysis on various parts of the show. For context, this show is part of the 'Produce Series' which is a kind of reality TV music
+                    competition, sort of like The Voice or X Factor. There are 101 contestants and they compete to rank in the top 11 to make an 11 member JPOP group. 
+                    The original show is from Korea, and this is the Japanese version. There's several rounds of performances (called battles or missions)
+                    and after each round a certain amount of contestants are eliminated. Eliminations and ranks are based off of fan/viewer voting. The amount that 
+                    make it through the rounds is: 101->50->35 ->20->11. The final winners of the show are now known as a group called ME:I. <br><br>
+                    Anyway, that was a quick overview of what the show is about. I enjoyed the show and all the performances and contestants. So I decided to
+                    use my skills that I've learned throughout school and work to do some analysis and visualize some small stats of the show for fun. <br><br>
+                    First, for data collection I built a tool using Python to scrape the show's official website where the ranking for each week was displayed and put it into an Excel file.
+                    I also collected data on what songs/teams each contestant was part of for each mission. Then I visualed the data using Power BI and some DAX to do a little extra calculations.<br><br>
+                    Below is a small slideshow of a few of the visuals I had.<br><br>
+                    <div class="img--container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="../images/PD101JP_Ranks.jpg" style="width:100%">
+                            <div class="text">Line graph of weekly rankings filtered for the final ME:I members, week 11 hovered</div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="../images/PD101JP_GB.jpg" style="width:100%">
+                            <div class="text">Pie charts of how many members of each group battle team passes each round</div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="../images/PD101JP_GB_BS2.jpg" style="width:100%">
+                            <div class="text">Same page as previous picture, showing only Body and Soul Team 2</div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="../images/PD101JP_PB_RR.jpg" style="width:100%">
+                            <div class="text">Similar kind of pie chart, but for the position battle, showing only Run Run team</div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="../images/PD101JP_CB.jpg" style="width:100%">
+                            <div class="text">Similar kind of pie chart, but for the concept battle</div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    Some fun little takeaways:<br>
+                    <li>Out of the 11 final members, 7 of them were within the top 11 ranks every week.</li>
+                    <li>From the 11 final members, Shizuku has the largest jump from 33 in week 6 to 20 in week 8. These weeks align with the time her position battle performance was aired (blonde Hero icon!).</li>
+                    <li>From the group battle, Body and Soul Team 2 had the best success rate, with 6/6 members passing all the way to the concept battle. Then 
+                        with 4/5 of the remaining members becoming debut members.
+                    </li>
+                    <li>Body and Soul overall had a pretty good passing rate. 6 of the debut members performed Body and Soul in the group battle (2 from Team 1 and 4 from Team 2).</li>
+                    <li>Hype Boy Team 2 had the worst passing rate from the group battle, with 0 members passing the group battle.</li>
+                    <li>6/7 members of the Run Run team pass the position battle, and 2/6 of the remaining members pass the concept battle. But both of them fail to pass the debut battle (noo Yuuki :'( )</li>
+                    <li>Rocketeer is the only dance position team from the position battle with members passing the debut battle.</li>
+                    <li>From the concept battle, &ME had the best success with 5/7 members becoming debut members.</li>
+                    <li>Conversely, Popcorn had 0 members become debut members.</li>
+                    <li>Ayane is best girl :^)</li>
+
+            </div>
+        </div>
+        <div class="more-posts">
+            <div class="card">
+                <h2>More Posts</h2>
+                <div class="more-images">
+                    <img src="../images/jam-at-and-some.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post1.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+                <div class="more-images">
+                    <img src="../images/double_turby.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post6.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+                <div class="more-images">
+                    <img src="../images/at_cafe_amb.jpg" id="more__img">
+                    <h4>
+                        <a href="../BlogPosts/post7.html" class="read-more">Read</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container">
+        <div class="footer__content">
+            <h2>Socials</h2>
+        </div>
+        <div class="footer__content">
+            <a href="https://github.com/jamgamm"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jam-ivy-gammuac-557bb6274"><i class="fa fa-linkedin-square "></i></a>
+            <a href="mailto:jamivy.gammuac@ucalgary.ca"><i class="fa-solid fa-envelope"></i></a>
+        
+        </div>
+    </div>
+
+    <script src="../JS/app.js"></script>
+    <script src="../JS/swiper.js"></script>
+</body>
+</html>
